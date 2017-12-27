@@ -10,7 +10,7 @@
   "author": "YuqingGuan",
   "license": "ISC",
   "devDependencies": {
-    "aframe": "^0.7.1",
+    "aframe": "^0.7.0",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-polyfill": "^6.26.0",

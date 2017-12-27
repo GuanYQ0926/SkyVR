@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <title>sky simulation</title>
+        <script src="./dist/build.js"></script>
     </head>
     <body>
-        <div id="app"></div>
-        <script src="./dist/build.js"></script>
+        <a-scene>
+            <a-entity id="sky" geometry="primitive: sphere; radius: 100;"
+                material="shader: sky-shaders; side: back" sky-view>
+            </a-entity>
+        </a-scene>
     </body>
 </html>

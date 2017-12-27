@@ -4,6 +4,8 @@
 
 <script>
 import Sky from '../sky'
+import AFRAME from 'aframe'
+
 
 export default{
     data: () => ({
