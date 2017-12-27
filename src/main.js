@@ -42,7 +42,7 @@ AFRAME.registerComponent('sky-view', {
         inclination: {default: 1.5},
         azimuth: {default: 0.25},
         distance: {default: 400000},
-        sunspeed: {default: 0.00002}
+        sunspeed: {default: 0.00003}
     },
     init: function() {
         const theta = Math.PI*(this.data.inclination-0.5)
@@ -56,7 +56,6 @@ AFRAME.registerComponent('sky-view', {
     tick: function(time, timeDelta) {
         const d = timeDelta*this.data.sunspeed
         this.data.inclination += d
-        this.data.azimuth += (d/3)
         const theta = Math.PI*(this.data.inclination-0.5)
         const phi = 2*Math.PI*(this.data.azimuth-0.5)
         this.el.setAttribute('material', 'sunPosition', {
